@@ -20,6 +20,9 @@ antigen bundle nvm
 antigen bundle python
 antigen bundle tmux
 antigen theme bhilburn/powerlevel9k powerlevel9k
+# For faster execution, you can choose powerlevel10k instead
+# More about this in here: https://github.com/romkatv/powerlevel10k/#is-it-really-fast
+# antigen theme romkatv/powerlevel10k powerlevel10k
 antigen apply
 
 # Add your project directory to cdpath
