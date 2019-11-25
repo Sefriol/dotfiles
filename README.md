@@ -26,6 +26,8 @@ You can follow many popular environment setup guides [here](https://github.com/t
 
 *Note: For vsCode, the font name is `FiraCode Nerd Font`*
 
+*Note2: for vsCode terminal, you need to add `    "terminal.integrated.fontFamily": "FiraCode Nerd Font"` to options.*
+
 #### CDPATH
 
 in `.zshrc` file, you can modify the `cdpath` property to allow you to more easily access your projects and desired directories.
