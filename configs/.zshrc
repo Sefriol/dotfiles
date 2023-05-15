@@ -1,29 +1,18 @@
 ########################
-# Antigen
+# Antidote
 ########################
-source ~/.antigen/antigen.zsh
+
+# Source antidote.
+source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
 source ~/.theme
 
-antigen use oh-my-zsh
-antigen bundle StackExchange/blackbox
-antigen bundle brew
-antigen bundle command-not-found
-antigen bundle common-aliases
-antigen bundle docker
-antigen bundle docker-compose
-antigen bundle kube-ps1
-antigen bundle dbz/kube-aliases
-antigen bundle git
-antigen bundle golang
-antigen bundle npm
-antigen bundle nvm
-antigen bundle python
-antigen bundle tmux
-antigen theme bhilburn/powerlevel9k powerlevel9k
-# For faster execution, you can choose powerlevel10k instead
-# More about this in here: https://github.com/romkatv/powerlevel10k/#is-it-really-fast
-# antigen theme romkatv/powerlevel10k powerlevel10k
-antigen apply
+autoload -Uz compinit && compinit
+
+antidote load
+
+bindkey '\eOA' history-substring-search-up
+bindkey '\eOB' history-substring-search-down
+HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 
 # Add your project directory to cdpath
 typeset -U path cdpath fpath
@@ -48,3 +37,6 @@ alias lal='exa -al --group-directories-first --classify'
 alias lt='exa -T --group-directories-first --classify'
 alias lta='exa -aT --group-directories-first --classify'
 alias lat='exa -aT --group-directories-first --classify'
+
+alias c='code-insiders'
+alias docker=podman
