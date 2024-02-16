@@ -8,8 +8,8 @@ Source and installation scripts to setup following theme for your development en
 
 ### Required
 Following packages will be installed
-- [Antigen](https://github.com/zsh-users/antigen)
-- [exa](https://the.exa.website/)
+- [Antidote](https://getantidote.github.io)
+- [eza](hhttps://eza.rocks)
 
 ### Optional
 - [tmux](https://github.com/tmux/tmux)

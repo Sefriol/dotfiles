@@ -1,11 +1,11 @@
-echo "Installing exa"
-brew install exa
+echo "Installing eza"
+brew install eza
 
 # Install tmux (Optional)
 # echo "Install tmux (Optional)"
 # brew install tmux
 
-echo "Installing antigen"
+echo "Installing antidote"
 brew install antidote
 
 
