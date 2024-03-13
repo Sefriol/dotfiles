@@ -1,6 +1,9 @@
 echo "Installing eza"
 brew install eza
 
+echo "Installing Stow for managing scripts"
+brew install stow
+
 # Install tmux (Optional)
 # echo "Install tmux (Optional)"
 # brew install tmux
@@ -25,8 +28,9 @@ echo "REMINDER: Fonts need to be set for each Terminal / IDE manually"
 echo "DOCS: https://github.com/romkatv/powerlevel10k/blob/master/font.md"
 
 # Copy configs. i.e. copy all files in this repository except this install directory
-echo "Copying config files to $HOME"
+echo "Creating Symbolic links to $HOME"
 
-rsync -av ../configs/ ~/
+cd ..
+stow  -t $HOME .
 
 echo "Installation complete!"
