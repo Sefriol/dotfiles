@@ -14,6 +14,7 @@ ohmyzsh/ohmyzsh path:plugins/golang
 ohmyzsh/ohmyzsh path:plugins/npm
 ohmyzsh/ohmyzsh path:plugins/nvm
 ohmyzsh/ohmyzsh path:plugins/python
+ohmyzsh/ohmyzsh path:plugins/fzf
 
 belak/zsh-utils path:editor
 belak/zsh-utils path:history

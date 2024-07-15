@@ -1,0 +1,22 @@
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding.x = 10
+padding.y = 10
+
+decorations = "Buttonless"
+opacity = 0.8
+blur = true
+
+option_as_alt = "OnlyLeft"
+
+[font]
+normal.family = "MesloLGS Nerd Font Mono"
+
+[keyboard]
+bindings = [
+{ key = "C", mods = "Command", action = "Copy"},
+{ key = "V", mods = "Command", action = "Paste"}
+]
+
