@@ -50,8 +50,11 @@ alias lt='eza -T --group-directories-first --classify'
 alias lta='eza -aT --group-directories-first --classify'
 alias lat='eza -aT --group-directories-first --classify'
 
-alias c='code-insiders'
 alias docker=podman
+
+# Use Zoxide for change directory
+alias c='builtin cd'
+alias cd=z
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
