@@ -54,7 +54,7 @@ alias docker=podman
 
 # Use Zoxide for change directory
 alias c='builtin cd'
-alias cd=z
+alias cd=zi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
